@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oppgave 2</title>
+</head>
+<body>
+    <h1>For deg som liker turopplevelser!</h1>
+    <section class="turopplevelse">
+        <a href="friluftsliv1.html" class="seks-kolonner og to rader"><img src="friluftsliv_1.jpg">
+            <h1>en berolignede tur til fjellet. opplev en fin overnattig på fjellet.</h1></a>
+
+        <a href="friluftsliv2.html" class="tre-kolonner og to rader"><img src="friluftsliv_2.jpg">
+            <h1>fin tur til fjorden. spennende ting å se.</h1></a>
+
+        <a href="friluftsliv3.html" class="seks-kolonner og to rader"><img src="friluftsliv_3.jpg">
+            <h1>fin foss som du kan se i sommeren!</h1></a>
+
+        <a href="friluftsliv4.html" class="tre-kolonner og to rader"><img src="friluftsliv_4.jpg">
+            <h1>har du lyst til å se nordlys? se mer her.</h1></a>
+
+        <a href="friluftsliv5.html" class="tre-kolonner og to rader"><img src="friluftsliv_5.jpg">
+            <h1>har du lyst til å se alpene? trykk her for mer informasjon</h1></a>
+
+        <a href="friluftsliv6.html" class="fire-kolonner og to rader"><img src="friluftsliv_6.jpg">
+            <h1>liker du å stp på ski? les mer her.</h1></a>
+
+        <a href="friluftsliv7.html" class="fire-kolonner og to rader"><img src="friluftsliv_7.jpg">
+            <h1>fint tur med en gjeng på 5 på fjellet i østerriket.</h1></a>
+
+        <a href="friluftsliv8.html" class="fire-kolonner og to rader"><img src="friluftsliv_8.jpg">
+            <h1>lyst til å utforske flere steder i et fjell. les mer her</h1></a>
+    </section>
+    <style>
+        .turopplevelse {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            max-width: 80rem;
+            grid-auto-rows: minmax(20rem,auto);
+            gap: 1rem;
+        }
+        .turopplevelse a {
+            background-color: #eee;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            position: relative;
+            font-family: sans-serif;
+        }
+        .turopplevelse h1 {
+            position: absolute;
+            margin: 0;
+            background-color: rgba(128, 128, 128, 0.562);
+        }
+        .turopplevelse img {
+            position:absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            object-position:center;
+        }
+        .tre-kolonner{grid-column: span 5;}
+        .fire-kolonner{grid-column: span 5;}
+        .seks-kolonner{grid-column: span 5;}
+        .to-rader{grid-row: span 5;}
+    </style>
+</body>
+</html>
